@@ -1,3 +1,5 @@
+//+build cargs
+
 package cargs
 
 import (

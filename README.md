@@ -6,6 +6,11 @@ cargs.Init([]byte("cargsRandomKey"), "getarg")
 注意此处的key在每次编译时尽量做到随机，可通过makefile实现
 
 随后调用时通过`./main getarg --help`来生成--help的加密参数，然后将此加密参数作为./main的参数即可。
+## 编译
+```
+go build -tags cargs //使用cargs
+go build //不使用cargs
+```
 
 ## 适用场景
 - 自研工具的参数、用法隐藏（主要用途）
