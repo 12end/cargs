@@ -35,7 +35,7 @@ func Init(key []byte, flag string) {
 	} else if len(os.Args) == 2 {
 		input, err := base64.StdEncoding.DecodeString(os.Args[1])
 		if err != nil {
-			fmt.Println(err)
+			//fmt.Println(err)
 			os.Exit(1)
 		}
 		output := make([]byte, len(input))
